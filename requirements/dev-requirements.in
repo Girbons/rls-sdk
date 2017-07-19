@@ -1,0 +1,9 @@
+-r requirements.in
+
+# test
+coverage
+pytest
+pytest-cov
+
+# codestyle
+flake8
