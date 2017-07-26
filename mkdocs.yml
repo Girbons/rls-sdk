@@ -1,0 +1,11 @@
+site_name: Rocket League Stats SDK
+theme: readthedocs
+repo_url: https://github.com/Girbons/rls-sdk
+site_description: Rocket League Stats SDK
+site_author: Alessandro De Angelis
+pages:
+  - 'Home': 'index.md'
+  - 'Installation': 'installation.md'
+  - 'Usage': 'usage.md'
+  - 'Contribuiting': 'contribuiting.md'
+  - 'Changelog': 'changelog.md'
