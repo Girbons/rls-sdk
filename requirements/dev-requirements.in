@@ -1,5 +1,8 @@
 -r requirements.in
 
+# docs
+mkdocs
+
 # test
 coverage
 pytest
