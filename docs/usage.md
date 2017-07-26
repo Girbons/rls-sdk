@@ -1,21 +1,18 @@
 # Getting started
 
-
 Request the `API KEY` [here](https://developers.rocketleaguestats.com/)
 
 
 ```python
+from rls.rocket import RocketLeague
 
-    from rls.rocket import RocketLeague
-
-    rocket = RocketLeague(api_key=[Your API KEY])
+rocket = RocketLeague(api_key=[Your API KEY])
 ```
 
 Now to obtain the informations about a player you can make the following request:
 
 ```python
-
-    response = rocket.player.info(name="[Your name]")
+rocket.players.player(id='76561198079681869', platform=1)
 ```
 
 This will return a [Response](http://docs.python-requests.org/en/latest/api/?highlight=response#requests.Response) object that contains the response from the server.
@@ -72,13 +69,13 @@ To get the response content you can call the `json` method of response object:
 Other calls:
 
 ```python
+    rocket.data.platforms()
+    rocket.data.seasons()
+    rocket.data.playlists()
 
-rocket.data.platforms()
-rocket.data.seasons()
-rocket.data.playlists()
+    rocket.players.search_players(name=[name])
+    rocket.players.batch_players(json=[player list])
 
-rocket.player.search_players(name=[name])
-
-rocket.leaderboard.ranked(id=[id])
-rocket.leaderboard.stat(type=[type])
+    rocket.leaderboard.ranked(id=[id])
+    rocket.leaderboard.stat(type=[type])
 ```

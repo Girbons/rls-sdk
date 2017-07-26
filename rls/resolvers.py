@@ -15,11 +15,11 @@ class Resolver:
         try:
             url = url.format(**kwargs)
         except KeyError as param:
-            raise MissingParam(param)
+            raise MissingParam(param=param)
 
         self.method = method
         self.url = url
 
-    def resolve(self, api_key, api_map=None, **kwargs):
+    def resolve(self, api_key, api_map=None, json=None, **kwargs):
         self.setup(api_map=api_map, **kwargs)
-        return self.api.request(url=self.url, method=self.method, api_key=api_key)
+        return self.api.request(url=self.url, method=self.method, api_key=api_key, json=json)

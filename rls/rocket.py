@@ -17,7 +17,7 @@ class RocketLeague:
 
     def __getattr__(self, name):
         if name not in self.api_map:
-            raise ConfigError('COnfiguration not available in api_map for this call')
+            raise ConfigError('Configuration not available in api_map for this call')
         instance = RocketLeague(self.api_key, api_map=self.api_map[name])
         setattr(self, name, instance)
         return instance

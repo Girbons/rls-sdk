@@ -25,10 +25,15 @@ _API_MAP = {
                 },
             },
 
-            'player': {
-                'info': {
-                    'url': 'player?unique_id={id}',
+            'players': {
+                'player': {
+                    'url': 'player?unique_id={id}&platform_id={platform}',
                     'method': 'get'
+                },
+
+                'batch_players': {
+                    'url': 'player/batch',
+                    'method': 'post'
                 },
 
                 'search_players': {
