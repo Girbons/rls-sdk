@@ -23,7 +23,7 @@ class Api:
 def handle_response(response):
     status_code = response.status_code
     if 200 <= status_code <= 299:
-        return response.json()
+        return response
     elif status_code == 400:
         raise BadRequest
     elif status_code == 401:

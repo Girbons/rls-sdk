@@ -26,7 +26,7 @@ _API_MAP = {
             },
 
             'player': {
-                'player': {
+                'info': {
                     'url': 'player?unique_id={id}',
                     'method': 'get'
                 },
