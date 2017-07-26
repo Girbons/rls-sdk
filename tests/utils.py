@@ -8,4 +8,4 @@ def get_api_key():
         raise ('API_KEY not set')
 
 
-API_KEY = get_api_ey()
+API_KEY = get_api_key()
