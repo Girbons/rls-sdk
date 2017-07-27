@@ -12,6 +12,9 @@ Rocket League Stats SDK
     :target: http://rocket-league-stats-sdk.readthedocs.io/en/latest/?badge=devel
     :alt: Documentation Status
 
+.. image:: https://badge.fury.io/py/rls-sdk.svg
+    :target: https://badge.fury.io/py/rls-sdk
+
 .. image:: ./img/rls_partner_horizontal_large.png
     :alt: This app uses data provided by Rocket League Stats
 
