@@ -10,7 +10,7 @@ cffi==1.10.0              # via cryptography
 chardet==3.0.4            # via requests
 click==6.7                # via mkdocs
 coverage==4.4.1
-cryptography==2.0         # via pyopenssl
+cryptography==2.3         # via pyopenssl
 flake8==3.3.0
 idna==2.5                 # via cryptography, requests
 jinja2==2.9.6             # via mkdocs
