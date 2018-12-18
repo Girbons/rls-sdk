@@ -30,4 +30,4 @@ pyyaml==3.13              # via mkdocs
 requests==2.18.2
 six==1.10.0               # via cryptography, livereload, pyopenssl
 tornado==4.5.1            # via livereload, mkdocs
-urllib3==1.22             # via requests
+urllib3==1.24.1             # via requests
