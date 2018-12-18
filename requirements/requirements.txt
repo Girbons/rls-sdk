@@ -14,4 +14,4 @@ pycparser==2.18           # via cffi
 pyopenssl==17.2.0
 requests==2.18.2
 six==1.10.0               # via cryptography, pyopenssl
-urllib3==1.22             # via requests
+urllib3==1.24.1             # via requests
